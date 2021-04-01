@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:chat/chat_screen.dart';
 
 void main() async {
   runApp(MyApp());
@@ -41,9 +42,9 @@ void main() async {
   //   print(dado.documents[0].data);
   // });
 
-  Firestore.instance.collection('mensagens').document('D11Tpijrshti7KerTx4K').snapshots().listen((dado2) {
-    print(dado2.data);
-  });
+  // Firestore.instance.collection('mensagens').document('D11Tpijrshti7KerTx4K').snapshots().listen((dado2) {
+  //   print(dado2.data);
+  // });
 }
 
 class MyApp extends StatelessWidget {
@@ -54,8 +55,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        iconTheme: IconThemeData(
+          color: Colors.blue,
+        ),
       ),
-      home: Container(),
+      home: ChatScreen(),
     );
   }
 }
