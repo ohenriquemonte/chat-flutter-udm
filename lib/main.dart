@@ -1,29 +1,28 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:chat/chat_screen.dart';
 
 void main() async {
   runApp(MyApp());
 
-    // Firestore.instance.collection('col').document('doc').setData({'texto': 'henrique'});
+  // Firestore.instance.collection('col').document('doc').setData({'texto': 'henrique'});
 
-    // Firestore.instance.collection('mensagens').document().setData({
-    //     'texto': 'Olá',
-    //     'from': 'Henrique'
-    //   });
+  // Firestore.instance.collection('mensagens').document().setData({
+  //     'texto': 'Olá',
+  //     'from': 'Henrique'
+  //   });
 
-    // Firestore.instance.collection('mensagens').document().setData({
-    //   'texto': 'Tudo bem?',
-    //   'from': 'Daniel'
-    // });
+  // Firestore.instance.collection('mensagens').document().setData({
+  //   'texto': 'Tudo bem?',
+  //   'from': 'Daniel'
+  // });
 
-    // Firestore.instance.collection('mensagens').document().setData({
-    //   'texto': 'Tudo ótimo',
-    //   'from': 'Henrique'
-    // });
+  // Firestore.instance.collection('mensagens').document().setData({
+  //   'texto': 'Tudo ótimo',
+  //   'from': 'Henrique'
+  // });
 
-  // QuerySnapshot snapshot = await Firestore.instance.collection('mensagens').getDocuments(); 
-  
+  // QuerySnapshot snapshot = await Firestore.instance.collection('mensagens').getDocuments();
+
   // snapshot.documents.forEach((d) {
   //    d.reference.updateData({
   //      'lido': false
@@ -31,8 +30,8 @@ void main() async {
   //    print(d.documentID);
   //    print(d.data);
   // });
-  
-  // DocumentSnapshot snapshot1 = await Firestore.instance.collection('mensagens').document('D11Tpijrshti7KerTx4K').get(); 
+
+  // DocumentSnapshot snapshot1 = await Firestore.instance.collection('mensagens').document('D11Tpijrshti7KerTx4K').get();
   // print(snapshot1.data);
 
   // Firestore.instance.collection('mensagens').snapshots().listen((dado) {
